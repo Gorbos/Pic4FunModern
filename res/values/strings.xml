@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pic4Fun</string>
+ 	<string name="menu_settings">Settings</string>
+ 	<string name="clear_cache_menu">Clear Caches</string>
+    <string name="clear_cache_complete_toast">Caches have been cleared</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="no_network_connection_toast">No network connection found</string>
+    
+   
+    <string name="save">Save</string>
+    <string name="merge">Merge</string>
+    <string name="finalize">Finalize</string>
+    <string name="original">Original</string>
+    <string name="reset">Reset</string>
+    <string name="setimages">Set Images</string>
+    
+     <!--Buttons-->
+    <string name="back_btn">Back</string>
+    <string name="ok_btn">Ok</string>
+    <string name="done_btn">Done</string>
+    <string name="send_btn">Send</string>
+   	<string name="exit_btn">Exit</string>
+    <string name="logout_btn">Log Out</string>
+    <string name="save_btn">Save</string>
+   	<string name="yes_btn">Yes</string>
+    <string name="no_btn">No</string>
+    <string name="next_btn">Next</string>
+    
+    <!--Form Labels-->
+    <string name="lbl_connecting">Connecting...</string>
+    <string name="lbl_pleasewait">Please wait...</string>
+    
+    <!--Form Message-->
+    <string name="message_exit">Exit</string>
+    <string name="message_application">application?</string>
+    <string name="message_logoutexit">Logout and Exit</string>
+    <string name="message_checkconnection">The device has no data connection. Please turn it on in the wireless and network settings to enable full use of the application.</string>
+    
+    <!-- Effects -->
+    <string name="effectie">Image Effects</string>
+    <string name="effectframe">Frames</string>
+    <string name="effectgrid">Grids</string>
+    <string name="effectcollage">Collages</string>
+    <string name="effectdraw">Draw4Fun</string>
+    <string name="effecttext">Text</string>
+    
+    <string name="urikey">firsttag</string>
+    <string name="uritag">secondtag</string>
+    
+    
+    <!-- Grid values -->
+    <string name="instructions">Add an image. Then press on image to drag it. Drop it on the grid.</string>
+    <string name="hello">Add an image. Then drag it onto the grid.</string>
+    <integer name="num_images">4</integer>
+    <integer name="num_columns">2</integer>
+</resources>

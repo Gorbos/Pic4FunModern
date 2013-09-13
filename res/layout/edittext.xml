@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+   	 xmlns:launcher="http://schemas.android.com/apk/res/com.android.launcher"
+     android:orientation="vertical"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+     
+	     <LinearLayout 
+		   android:id="@+id/bottom_part"
+		   android:orientation="horizontal"
+		   android:layout_width="fill_parent" 
+		   android:layout_height="wrap_content"
+		   android:background="#000000"
+		   >
+			<ImageView  
+			    android:id="@+id/refresh"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent" 
+			    android:layout_gravity="center"
+			    android:src="@drawable/refresh_selector"
+			    android:layout_weight="0.2"/>
+			<ImageView  
+			    android:id="@+id/ok"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent" 
+			    android:layout_gravity="center"
+			    android:src="@drawable/savebtn"
+			    android:layout_weight="0.2"/>
+			
+			</LinearLayout>
+	    
+	 <RelativeLayout 
+		   android:orientation="horizontal"
+		   android:layout_width="fill_parent" 
+		   android:layout_height="wrap_content"
+		   android:background="#000000"
+		   >
+		<jpact.pic4funmodern.util.drag.collage.DragLayer
+		    xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/drag_layer"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true">
+			
+			    <ImageView  
+			    android:id="@+id/image"
+			    android:layout_width="wrap_content"  
+			    android:layout_height="wrap_content"
+			    />
+			    <TextView  
+			    android:id="@+id/text"
+			    android:layout_width="wrap_content"  
+			    android:layout_height="wrap_content"
+			    />
+						
+			</jpact.pic4funmodern.util.drag.collage.DragLayer>
+		</RelativeLayout>
+	    
+</LinearLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/qe_land_bg"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp">
+    
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center" 
+    android:layout_margin="0dp">
+ 
+     <Button
+  android:id="@+id/btnmergecollage"
+  android:layout_width="100dp"
+  android:layout_height="wrap_content" 
+    
+  android:padding="10dp"
+  android:background="@color/button_qe_selector"
+  android:textColor="@color/text_button_form_selector"
+  android:layout_marginTop="1dp"
+  android:layout_marginBottom="5dp"
+  android:layout_marginLeft="2dp"
+  android:layout_marginRight="2dp"
+  android:text="Merge"
+  />
+     
+     <Button
+  android:id="@+id/btnresetcollage"
+  android:layout_width="100dp"
+  android:layout_height="wrap_content" 
+    
+  android:padding="10dp"
+  android:background="@color/button_qe_selector"
+  android:textColor="@color/text_button_form_selector"
+  android:layout_marginTop="1dp"
+  android:layout_marginBottom="5dp"
+  android:layout_marginLeft="2dp"
+  android:layout_marginRight="2dp"
+  android:text="Reset"
+  />
+     
+     <Button
+  android:id="@+id/btnreloadcollage"
+  android:layout_width="100dp"
+  android:layout_height="wrap_content" 
+    
+  android:padding="10dp"
+  android:background="@color/button_qe_selector"
+  android:textColor="@color/text_button_form_selector"
+  android:layout_marginTop="1dp"
+  android:layout_marginBottom="5dp"
+  android:layout_marginLeft="2dp"
+  android:layout_marginRight="2dp"
+  android:text="Add Pic"
+  />
+     
+ </LinearLayout>
+ 
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/collagebackground"
+            android:layout_width="325dp"
+            android:layout_height="240dp" >
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/collageImageSelection"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btncollage1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/img_original"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btncollage2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/img_original"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btncollage3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/img_original"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btncollage4"
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/img_original"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btncollage5"
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/img_original"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btncollage6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/img_original"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btncollage7"
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/img_original"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btncollage8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/img_original"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btncollage9" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/img_original"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/btncollage10"
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@drawable/img_original"
+                android:visibility="gone" />
+        </LinearLayout>
+    
+                <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+             <ImageButton
+		        android:id="@+id/btncollage11"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/img_original"
+		       	android:background="@null"
+		       	android:layout_margin="5dp"
+		       	android:visibility="gone"
+		        />
+             
+               <ImageButton
+		        android:id="@+id/btncollage12"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/img_original"
+		       	android:background="@null"
+		       	android:layout_margin="5dp"
+		       	android:visibility="gone"
+		        />
+               
+                <ImageButton
+		        android:id="@+id/btncollage13"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/img_original"
+		       	android:background="@null"
+		       	android:layout_margin="5dp"
+		       	android:visibility="gone"
+		        />
+                 
+                <ImageButton
+		        android:id="@+id/btncollage14"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/img_original"
+		       	android:background="@null"
+		       	android:layout_margin="5dp"
+		       	android:visibility="gone"
+		        />
+                   
+                <ImageButton
+		        android:id="@+id/btncollage15"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/img_original"
+		       	android:background="@null"
+		       	android:layout_margin="5dp"
+		       	android:visibility="gone"
+		        />
+    
+
+        </LinearLayout>
+    
+        
+        
+	</LinearLayout>
+</LinearLayout>

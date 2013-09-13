@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+   	 xmlns:launcher="http://schemas.android.com/apk/res/com.android.launcher"
+     android:orientation="vertical"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+     
+	<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000000">
+<RelativeLayout 
+   android:orientation="horizontal"
+   android:layout_width="fill_parent" 
+   android:layout_height="wrap_content"
+   >
+	<jpact.pic4funmodern.util.drag.grid.DragLayer
+	    android:id="@+id/drag_layer"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	   >
+	
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		     android:orientation="vertical"
+		     android:layout_width="fill_parent"
+		     android:layout_height="fill_parent">
+		
+			<LinearLayout 
+			     android:orientation="vertical"
+			     android:layout_width="fill_parent"
+			     android:layout_height="fill_parent"
+			     android:weightSum="1.0" >
+			     
+			     <LinearLayout 
+				   android:id="@+id/bottom_part"
+				   android:orientation="horizontal"
+				   android:layout_centerHorizontal="true"
+				   android:layout_width="fill_parent" 
+				   android:layout_height="fill_parent"
+				   android:layout_weight="0.2"
+				   >
+					<ImageView  
+					    android:id="@+id/refresh"
+					    android:layout_width="fill_parent" 
+					    android:layout_height="fill_parent" 
+					    android:layout_gravity="center"
+					    android:src="@drawable/refresh"
+					    android:layout_weight="0.2"/>
+					<ImageView  
+					    android:id="@+id/ok"
+					    android:layout_width="fill_parent" 
+					    android:layout_height="fill_parent" 
+					    android:layout_gravity="center"
+					    android:src="@drawable/savebtn"
+					    android:layout_weight="0.2"/>
+					</LinearLayout>
+			    
+			<GridView  
+			    android:id="@+id/image_grid_view"
+			    android:layout_width="wrap_content" 
+			    android:layout_height="fill_parent"
+			    android:numColumns="@integer/num_columns"
+			    android:verticalSpacing="2dip"
+			    android:horizontalSpacing="2dip"
+			    android:stretchMode="columnWidth"
+			    android:gravity="center"
+			    android:layout_weight="0.8"
+			    android:background="@color/grid_background"/>
+			
+			
+				
+				<LinearLayout 
+				   android:id="@+id/bottom_part"
+				   android:orientation="horizontal"
+				   android:layout_centerHorizontal="true"
+				   android:layout_width="fill_parent" 
+				   android:layout_height="fill_parent"
+				   android:layout_weight="0.2"
+				   android:weightSum="1.0"
+				   >
+					<FrameLayout
+					    android:id="@+id/image_source_frame1"
+					    android:layout_weight="0.5"
+					    android:layout_width="80dp"
+					    android:layout_height="80dp">
+					
+					    <ImageView  
+					        android:layout_width="fill_parent" 
+					        android:layout_height="fill_parent" 
+					        android:layout_gravity="center"
+					       />
+					</FrameLayout>
+					<FrameLayout
+					    android:id="@+id/image_source_frame2"
+					    android:layout_weight="0.5"
+					    android:layout_width="80dp"
+					    android:layout_height="80dp">
+					
+					    <ImageView  
+					        android:layout_width="fill_parent" 
+					        android:layout_height="fill_parent" 
+					        android:layout_gravity="center"
+					       />
+					</FrameLayout>
+					<FrameLayout 
+					    android:id="@+id/image_source_frame3"
+					    android:layout_weight="0.5"
+					    android:layout_width="80dp"
+					    android:layout_height="80dp">
+					
+					    <ImageView  
+					        android:layout_width="fill_parent" 
+					        android:layout_height="fill_parent" 
+					        android:layout_gravity="center"
+					       />
+					</FrameLayout>
+					<FrameLayout 
+					    android:id="@+id/image_source_frame4"
+					    android:layout_weight="0.5"
+					    android:layout_width="80dp"
+					    android:layout_height="80dp">
+					
+					    <ImageView  
+					        android:layout_width="fill_parent" 
+					        android:layout_height="fill_parent" 
+					        android:layout_gravity="center"
+					       />
+					</FrameLayout>
+					
+				
+				</LinearLayout>
+			</LinearLayout>
+		
+		</LinearLayout>
+	</jpact.pic4funmodern.util.drag.grid.DragLayer>
+</RelativeLayout>
+
+	</LinearLayout>
+    
+</LinearLayout>

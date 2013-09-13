@@ -1,0 +1,244 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- Custom Dialog -->
+    <style name="customDialogTheme" parent="android:style/Theme.Dialog">
+    <item name="android:windowBackground">@color/transparent_color</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+   	</style>
+    
+	
+    <!-- Transparent List View -->
+    <style name="transparentListView" parent="@android:style/Widget.ListView">
+  		<item name="android:cacheColorHint">@android:color/transparent</item>
+  	</style>
+	<style name="transparentExpandableListView" parent="@android:style/Widget.ExpandableListView">
+  		<item name="android:cacheColorHint">@android:color/transparent</item>
+  	</style>
+  	<!-- Remove bottom line of tab -->
+  	<style name="disableTabStrip" parent="android:Theme"> 
+    	<item name="android:tabStripEnabled">false</item>
+ 	</style>
+ 	
+  	
+  	
+  	<!-- Browser Screen Title -->
+    <style name="browserTitleText" parent="android:TextAppearance.WindowTitle">
+          <item name="android:textSize">15sp</item>
+          <item name="android:textColor">#FFFFFF</item>
+          <item name="android:textStyle">bold</item>
+          <!--<item name="android:textStyle">bold|italic</item>-->
+    </style>
+    <style name="browserTitleStyle">
+        <item name="android:textAppearance">@style/browserTitleText</item>
+        <item name="android:paddingLeft">5px</item>
+    </style>
+    <!-- Dynamic Screen Title -->
+    <style name="titleText" parent="android:TextAppearance.WindowTitle">
+          <item name="android:textSize">20sp</item>
+          <item name="android:textColor">#FFFFFF</item>
+          <item name="android:textStyle">bold</item>
+          <!--<item name="android:textStyle">bold|italic</item>-->
+    </style>
+    <style name="titleBg">
+        <!--<item name="android:background">#222222</item>-->
+        <!--<item name="android:background">@color/gradient</item>-->
+        <item name="android:background">@drawable/app_header</item>
+    </style>
+    <!--<style name="titleStyle" parent="android:WindowTitle">-->
+    <style name="titleStyle">
+        <item name="android:textAppearance">@style/titleText</item>
+        <item name="android:paddingLeft">5px</item>
+    </style>
+    <!-- Transparent List View -->
+    <style name="transparentListView" parent="@android:style/Widget.ListView">
+  		<item name="android:cacheColorHint">@android:color/transparent</item>
+  	</style>
+	<style name="transparentExpandableListView" parent="@android:style/Widget.ExpandableListView">
+  		<item name="android:cacheColorHint">@android:color/transparent</item>
+  	</style>
+  	<!-- Remove bottom line of tab -->
+  	<style name="disableTabStrip" parent="android:Theme"> 
+    	<item name="android:tabStripEnabled">false</item>
+ 	</style>
+ 	<!-- AutoCompleteTextViewLight -->
+ 	
+ 	
+ 	<style name="autoCompleteTextViewLight" parent="@android:style/Widget.AutoCompleteTextView">
+		<item name="android:textColor">@android:color/primary_text_light</item>
+	</style>
+	<style name="widgetDropDownItemLight" parent="@android:style/Widget.DropDownItem">
+		<item name="android:textColor">@android:color/primary_text_light</item>
+	</style> 
+    
+	 <style name="AppTheme.FullScreen" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+	
+	<style name="Animations" />
+         <style name="Animations.SmileWindow">
+                <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+                <item name="@android:windowExitAnimation">@anim/grow_from_top</item>
+    </style>
+        <style name="appTheme" parent="android:Theme.Light">
+        <item name="android:windowTitleSize">45dp</item>
+        <item name="android:windowTitleStyle">@style/titleStyle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/titleBg</item>
+        <item name="android:windowBackground">@color/app_theme_color</item>
+	    <item name="android:colorBackground">@color/app_theme_color</item>
+	    <item name="android:listViewStyle">@style/transparentListView</item>
+        <item name="android:expandableListViewStyle">@style/transparentExpandableListView</item>
+        <item name="android:tabWidgetStyle">@style/disableTabStrip</item>
+        <item name="android:autoCompleteTextViewStyle">@style/autoCompleteTextViewLight</item>
+		<item name="android:dropDownItemStyle">@style/widgetDropDownItemLight</item>
+    </style>
+    <style name="appThemeBrowser" parent="appTheme">
+        <item name="android:windowTitleSize">25dp</item>
+        <item name="android:windowTitleStyle">@style/browserTitleStyle</item>
+        <item name="android:windowTitleBackgroundStyle">@style/titleBg</item>
+    </style>
+    <style name="appThemeNoTitleBar" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/app_theme_color</item>
+	    <item name="android:colorBackground">@color/app_theme_color</item>
+	    <item name="android:listViewStyle">@style/transparentListView</item>
+        <item name="android:expandableListViewStyle">@style/transparentExpandableListView</item>
+        <item name="android:tabWidgetStyle">@style/disableTabStrip</item>
+        <item name="android:autoCompleteTextViewStyle">@style/autoCompleteTextViewLight</item>
+		<item name="android:dropDownItemStyle">@style/widgetDropDownItemLight</item>
+	</style>
+	<style name="appThemeNoOverlayNoTitleBar" parent="appThemeNoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="appThemeNoOverlay" parent="appTheme">
+    	<item name="android:windowContentOverlay">@null</item>
+    </style>
+         
+         
+         
+    <!-- Custom Theme -->
+    <style name="appThemeNoOverlayNoTitleBar" parent="appThemeNoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    
+    <style name="appThemeNoTitleBar" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/app_theme_color</item>
+	    <item name="android:colorBackground">@color/app_theme_color</item>
+	    <item name="android:listViewStyle">@style/transparentListView</item>
+        <item name="android:expandableListViewStyle">@style/transparentExpandableListView</item>
+        <item name="android:tabWidgetStyle">@style/disableTabStrip</item>
+        <item name="android:autoCompleteTextViewStyle">@style/autoCompleteTextViewLight</item>
+		<item name="android:dropDownItemStyle">@style/widgetDropDownItemLight</item>
+	</style>
+	
+    <!-- Subtitle Logo -->
+    <style name="subtitleLogo">
+    	<item name="android:layout_marginTop">5dp</item>
+    	<item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/subtitle_logo</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="loginLogo" parent="subtitleLogo">
+    	<item name="android:layout_width">wrap_content</item>
+    	<item name="android:src">@drawable/splash_logo</item>
+    </style>
+    <!-- Form Labels -->
+    <style name="itemLabel">
+        <item name="android:paddingLeft">2px</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#26221F</item>
+        <!--<item name="android:typeface">monospace</item>#4A5257-->
+    </style>
+    <style name="itemString" parent="itemLabel">
+    	<!-- <item name="android:paddingTop">2px</item>
+    	<item name="android:paddingBottom">2px</item> -->
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+        <!--<item name="android:typeface">monospace</item>-->
+    </style>
+    <style name="itemInput">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="itemMessage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="itemMessage2" parent="itemMessage">
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+     <!-- Quick Edit Styles -->
+    <style name="Animations" />
+    <!-- PopDownMenu -->
+	<style name="Animations.PopDownMenu" />
+	<style name="Animations.PopDownMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+	</style>
+	<style name="Animations.PopDownMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+	</style>
+	<style name="Animations.PopDownMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+	</style>
+	<style name="Animations.PopDownMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_top</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+	<!-- PopUpMenu -->
+	<style name="Animations.PopUpMenu" />
+	
+	<style name="Animations.PopUpMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+	</style>
+	
+	<style name="Animations.PopUpMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+	</style>
+	
+	<style name="Animations.PopUpMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+	</style>
+	
+	<style name="Animations.PopUpMenu.Reflect">
+		<item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/disappear</item>
+	</style>
+	
+	
+	<!-- Transparent BG -->
+	<style name="Theme.Dim" parent="android:style/Theme.Translucent">
+	<item name="android:windowNoTitle">true</item>
+	<item name="android:windowContentOverlay">@null</item>
+	<item name="android:backgroundDimEnabled">true</item>
+	<item name="android:background">@android:color/transparent</item>
+	</style>
+</resources>

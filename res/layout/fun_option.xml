@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  	android:orientation="vertical"
+   	android:background="@drawable/qe_land_bg"
+   >
+
+     <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp" >
+
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:padding="10dp"
+            android:orientation="vertical"
+            
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                >
+                	<!-- Image Effect -->
+	                <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="110dp"
+	                android:orientation="vertical"
+	                android:layout_weight="1"
+	                
+	                >
+	                	
+	                    <Button
+	                        android:id="@+id/funimageeffect"
+	                        android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:drawableTop="@drawable/fun_ie_selector"
+			                android:text="Image Effects"
+			                android:textColor="#ffffff"
+			                android:background="@null"
+	                        >
+	                        
+	                    </Button>
+	                
+	              	</LinearLayout>
+	              	
+	                
+                 
+              		<!-- Frame -->
+	                <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="100dp"
+	                android:orientation="vertical"
+	                android:layout_weight="1"
+	                
+	                >
+	                	
+	                    <Button
+	                        android:id="@+id/funframe"
+	                        android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:drawableTop="@drawable/fun_frame_selector"
+			                android:text="Frame"
+			                android:textColor="#ffffff"
+			                android:background="@null"
+	                        >
+	                        
+	                    </Button>
+	                
+	              	</LinearLayout>
+	        </LinearLayout>	
+	     
+            
+          	<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                >
+                <!-- Image Effect -->
+	                <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="110dp"
+	                android:orientation="vertical"
+	                android:layout_weight="1"
+	                >
+	                	
+	                    <Button
+	                        android:id="@+id/fungrid"
+	                        android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:drawableTop="@drawable/fun_grid_selector"
+			                android:text="Grid"
+			                android:textColor="#ffffff"
+			                android:background="@null"
+	                        >
+	                        
+	                    </Button>
+	                
+	              	</LinearLayout>
+	              	
+	                
+                 
+              <!-- Frame -->
+	                <LinearLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="110dp"
+	                android:orientation="vertical"
+	                android:layout_weight="1"
+	                >
+
+	                    <Button
+	                        android:id="@+id/funcollage"
+	                        android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:drawableTop="@drawable/fun_collage_selector"
+			                android:text="Collage"
+			                android:textColor="#ffffff"
+			                android:background="@null"
+	                        >
+	                        
+	                    </Button>
+	                
+	              	</LinearLayout>
+	        </LinearLayout>	
+	        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal"
+                >
+                <!-- Draw -->
+	                <LinearLayout
+	                   
+	                android:layout_width="match_parent"
+	                android:layout_height="110dp"
+	                android:orientation="vertical"
+	                android:layout_weight="1"
+	                
+	                >
+	                	
+	                    <Button
+	                        
+	                        android:id="@+id/fundraw"
+	                        android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:drawableTop="@drawable/fun_draw_selector"
+			                android:text="Draw"
+			                android:textColor="#ffffff"
+			                android:background="@null"
+			                
+	                        >
+	                        
+	                    </Button>
+	                
+	              	</LinearLayout>
+	            
+	                
+	                <LinearLayout
+	                   
+	                android:layout_width="match_parent"
+	                android:layout_height="110dp"
+	                android:orientation="vertical"
+	                android:layout_weight="1"
+	                
+	                >
+	                	
+	                   <Button
+	                        
+	                        android:id="@+id/funtext"
+	                        android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:drawableTop="@drawable/fun_text_selector"
+			                android:text="Text"
+			                android:textColor="#ffffff"
+			                android:background="@null"
+			                
+	                        >
+	                        
+	                    </Button>
+	                
+	              	</LinearLayout>
+	        </LinearLayout>	
+        </LinearLayout>
+        
+    </ScrollView>
+
+</RelativeLayout>
